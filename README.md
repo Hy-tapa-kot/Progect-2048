@@ -1,4 +1,4 @@
-# Layaut Page
+# 2048 Game
 
 1.  Link to the preview [DEMO LINK](https://hy-tapa-kot.github.io/Progect-2048/)
 2.  Clone the Forked Repo
