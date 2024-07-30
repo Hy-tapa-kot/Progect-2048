@@ -12,4 +12,4 @@
 
 # A description of the project
 
-The project used only html and javascript
+2048 is a browser-based video game written by 19-year-old Italian developer Gabriele Cirulli in the JavaScript programming language. Plays a number puzzle with a field in the form of a square 4x4 cell. The goal of the game is to stack tiles with numbers to get a tile with the denomination "2048", hence the name

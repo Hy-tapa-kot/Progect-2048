@@ -1,13 +1,13 @@
-import Game from '../modules/Game.class';
+import Game from "../modules/Game.class";
 
 const game = new Game();
 
-const startButton = document.querySelector('.start');
-const gameField = document.querySelector('.game-field');
-const gameScore = document.querySelector('.game-score');
-const messageStart = document.querySelector('.message-start');
-const messageWin = document.querySelector('.message-win');
-const messageLose = document.querySelector('.message-lose');
+const startButton = document.querySelector(".start");
+const gameField = document.querySelector(".game-field");
+const gameScore = document.querySelector(".game-score");
+const messageStart = document.querySelector(".message-start");
+const messageWin = document.querySelector(".message-win");
+const messageLose = document.querySelector(".message-lose");
 
 const updateUI = () => {
   const grid = game.getGrid();
@@ -17,8 +17,8 @@ const updateUI = () => {
       const cell = gameField.rows[row].cells[col];
       const value = grid[row][col];
 
-      cell.textContent = value || '';
-      cell.className = 'field-cell';
+      cell.textContent = value || "";
+      cell.className = "field-cell";
 
       if (value) {
         cell.classList.add(`field-cell--${value}`);
@@ -30,39 +30,40 @@ const updateUI = () => {
 
 const checkGameState = () => {
   if (game.hasWon()) {
-    messageWin.classList.remove('hidden');
-
+    messageWin.classList.remove("hidden");
     return true;
   }
 
   if (game.isGameOver()) {
-    messageLose.classList.remove('hidden');
-
+    messageLose.classList.remove("hidden");
     return true;
   }
 
   return false;
 };
 
-startButton.addEventListener('click', () => {
+// Обробник натискання кнопки "Start" / "Restart"
+startButton.addEventListener("click", () => {
   game.reset();
   updateUI();
-  messageStart.classList.add('hidden');
-  messageWin.classList.add('hidden');
-  messageLose.classList.add('hidden');
+  messageStart.classList.add("hidden");
+  messageWin.classList.add("hidden");
+  messageLose.classList.add("hidden");
+
+  startButton.textContent = "Restart";
 });
 
-document.addEventListener('keydown', (event) => {
+document.addEventListener("keydown", (event) => {
   const key = event.key;
 
-  if (key === 'ArrowUp') {
-    game.move('up');
-  } else if (key === 'ArrowDown') {
-    game.move('down');
-  } else if (key === 'ArrowLeft') {
-    game.move('left');
-  } else if (key === 'ArrowRight') {
-    game.move('right');
+  if (key === "ArrowUp") {
+    game.move("up");
+  } else if (key === "ArrowDown") {
+    game.move("down");
+  } else if (key === "ArrowLeft") {
+    game.move("left");
+  } else if (key === "ArrowRight") {
+    game.move("right");
   }
 
   updateUI();
