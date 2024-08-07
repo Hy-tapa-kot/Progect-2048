@@ -1,15 +1,41 @@
-# 2048 Game
+# 🕹️ 2048 Game
 
 1.  Link to the preview [DEMO LINK](https://hy-tapa-kot.github.io/Progect-2048/)
-2.  Clone the Forked Repo
-    Now you need to clone the forked project to your computer. Follow the next steps (and see screenshots below): - Click the green Code button. - Select the HTTPS tab. - Ensure the link contains your GitHub name (NOT mate-academy). - Copy the link. - Open Git Bash (Windows) or ZSH (macOS) in your projects folder (You installed it in the Git and Terminal course). - Run pwd in the terminal to check that you are in the projects folder. - Clone the repo by running the git clone command with the URL you copied on GitHub.
 
-        ` git clone replace-this-with-the-URL-from-github `
+2048 is an easy and fun puzzle game. Even if you don't love numbers you will love this game. It is played on a 4x4 grid using the arrows or W, A, S, D keys alternatively. Every time you press a key - all tiles slide. Tiles with the same value that bump into one-another are merged. Although there might be an optimal strategy to play, there is always some level of chance. If you beat the game and would like to master it, try to finish with a smaller score. That would mean that you finished with less moves.
 
-3.  Open the Terminal
-4.  `npm install` (or just `npm i`).
-5.  `npm start`to Open the Page
+This game is mobile compatible and you can play it on any device - iPhone, iPad or any other smartphone.
 
-# A description of the project
+## 🌟 Built With
 
-2048 is a browser-based video game written by 19-year-old Italian developer Gabriele Cirulli in the JavaScript programming language. Plays a number puzzle with a field in the form of a square 4x4 cell. The goal of the game is to stack tiles with numbers to get a tile with the denomination "2048", hence the name
+- **HTML**: The standard markup language for creating web pages. [Homepage](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- **SCSS**: A CSS preprocessor that enhances CSS with nested rules, variables, and more. [Homepage](https://sass-lang.com/)
+- **JavaScript**: A versatile programming language that brings interactivity to websites. [Homepage](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+## 🚀 Getting Started
+
+To get the project up and running:
+
+1. **Repository Clone**:
+
+   ```sh
+   git clone https://github.com/Hy-tapa-kot/Progect-2048.git
+   ```
+
+2. **Project Directory**:
+
+   ```sh
+   cd Project-Layout
+   ```
+
+3. **Dependencies Installation**:
+
+   ```sh
+   npm install
+   ```
+
+4. **Development Server**:
+
+   ```sh
+   npm start
+   ```
