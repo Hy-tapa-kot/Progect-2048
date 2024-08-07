@@ -25,7 +25,7 @@ To get the project up and running:
 2. **Project Directory**:
 
    ```sh
-   cd Project-Layout
+   cd Progect-2048
    ```
 
 3. **Dependencies Installation**:
